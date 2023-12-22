@@ -12,6 +12,8 @@ def play():
 
             if my_money < bet:
                 print(f'Вам не хватает {bet - my_money}')
+            elif bet <= 0:
+                print('Нельзя делать ставки ниже 1')
             else:
                 win = random.randint(1, 10)
 
